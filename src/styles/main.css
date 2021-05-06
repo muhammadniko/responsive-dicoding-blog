@@ -17,6 +17,53 @@ body {
     color: #424242;
 }
 
+/* minimal layar ukuran besar */
+@media screen and (min-width: 480px) {
+
+    .headline {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .posts {
+        margin: 32px auto auto;
+        text-align: left;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+}
+
+/* minimal layar ukuran besar */
+@media screen and (min-width: 768px) {
+    .posts {
+        margin: 32px auto auto;
+        text-align: left;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+}
+
+/* minimal layar ukuran besar */
+@media screen and (min-width: 1000px) {
+    .headline {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .posts {
+        margin: 32px auto auto;
+        text-align: left;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+    }
+}
+
 /*
  * Header
  *
@@ -131,14 +178,7 @@ main {
     padding: 32px;
 }
 
-/*
- * headline
- */
 
-.headline {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-}
 
 .headline__figure {
     
@@ -214,14 +254,7 @@ main {
  * post
  */
 
-.posts {
-    margin: 32px auto auto;
-    text-align: left;
-    overflow: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-}
+
 
 /*
  * post item
