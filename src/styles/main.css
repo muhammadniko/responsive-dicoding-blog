@@ -18,11 +18,24 @@ body {
 }
 
 /* minimal layar ukuran besar */
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
+
+    .content {
+        padding: 15px;
+    }
 
     .headline {
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    .headline__content {
+        padding: 16px 16px;
+    }
+
+    .headline__description {
+        font-size: 14px;
+        margin-top: 12px;
     }
 
     .posts {
@@ -37,6 +50,16 @@ body {
 
 /* minimal layar ukuran besar */
 @media screen and (min-width: 768px) {
+
+    .headline__content {
+        padding: 16px 18px;
+    }
+
+    .headline__description {
+        font-size: 16px;
+        margin-top: 12px;
+    }
+
     .posts {
         margin: 32px auto auto;
         text-align: left;
@@ -44,6 +67,14 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 18px;
+    }
+
+        /*
+    * content
+    */
+
+    .content {
+        padding: 32px;
     }
 }
 
@@ -54,6 +85,10 @@ body {
         grid-template-columns: 1fr 1fr;
     }
 
+    .headline__content {
+        padding: 16px 32px;
+    }
+
     .posts {
         margin: 32px auto auto;
         text-align: left;
@@ -61,6 +96,13 @@ body {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 18px;
+    }
+    /*
+    * content
+    */
+
+    .content {
+        padding: 32px;
     }
 }
 
@@ -170,13 +212,6 @@ main {
     margin: 0 auto;
 }
 
-/*
- * content
- */
-
-.content {
-    padding: 32px;
-}
 
 
 
@@ -197,19 +232,14 @@ main {
     margin-top: 8px;
 }
 
-.headline__content {
-    padding: 16px 32px;
-}
+
 
 .headline__title {
     font-size: 32px;
     font-weight: 500;
 }
 
-.headline__description {
-    font-size: 16px;
-    margin-top: 12px;
-}
+
 
 .headline__button {
     font-family: "Roboto", sans-serif;
